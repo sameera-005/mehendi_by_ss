@@ -1,7 +1,3 @@
-/* =====================================================
-   MEHFIL MEHENDI ART
-   Main Stylesheet
-   ===================================================== */
 
 :root {
     --brown-dark: #321c16;
@@ -795,7 +791,7 @@ button {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 280px;
+    grid-auto-rows: 360px;
     gap: 15px;
 }
 
@@ -812,13 +808,18 @@ button {
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.7s ease;
+    object-fit: contain;
+    object-position: center;
+    background: #fffaf2;
+    display: block;
 }
 
+
+
 .gallery-item:hover img {
-    transform: scale(1.07);
+    transform: scale(1.02);
 }
+
 
 .gallery-overlay {
     position: absolute;
